@@ -109,4 +109,10 @@ button:hover {
   h1 {
     font-size: 25px;
   }
+
+  .mainImag img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
