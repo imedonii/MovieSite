@@ -1,23 +1,43 @@
-import logo from './logo.svg';
 import './App.css';
+// import Movies from './componets/Movies';
+import Image from './componets/Image';
+import data from './data/movies'
+import { useState } from 'react';
+import Modal from './componets/Modal';
+
 
 function App() {
+
+  const [movies, setMovies] = useState(data);
+  const [modal, setModal] = useState(false);
+  const [film, setFilm] = useState([]);
+
+  function modalModal() {
+    setModal(!modal);
+  }
+
+
+  function clickPhoto(id) {
+
+    const film = movies.filter(mov => mov.id === id)[0];
+    setFilm(film);
+    setModal(!modal);
+    setModal(true);
+    // console.log(film);
+
+    // return (
+    //   <>
+    //     <Modal movies={film} />
+    //   </>
+    // );
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='movieSection'>
+      {/* <Movies movies={movies} /> */}
+      <Image movies={movies} clickPhoto={clickPhoto} />
+      {modal && <Modal film={film} modalModal={modalModal} />}
+
     </div>
   );
 }
