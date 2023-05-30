@@ -22,14 +22,7 @@ function App() {
     const film = movies.filter(mov => mov.id === id)[0];
     setFilm(film);
     setModal(!modal);
-    setModal(true);
-    // console.log(film);
-
-    // return (
-    //   <>
-    //     <Modal movies={film} />
-    //   </>
-    // );
+    // setModal(true);
   }
 
   return (

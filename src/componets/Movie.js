@@ -7,9 +7,6 @@ import React from 'react'
 
 export default function Movie({ film }) {
 
-    // const [film, setfilm] = useState(data);
-
-    // console.log(film);
     return (
         <div>
             <div className='info'>
@@ -22,7 +19,6 @@ export default function Movie({ film }) {
                     <p>{film.description}</p>
                     <p><b>{film.time} min</b></p>
                     <div className='buttons'>
-                        {/* <h3>Watch</h3> */}
                         <a href={film.movieLink}>
                             <button>
                                 <i className="fa-regular fa-circle-play"></i>

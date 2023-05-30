@@ -1,22 +1,10 @@
-import React, { useState } from 'react'
-// import './App.css';
+import React from 'react'
 import Movie from './Movie';
 
 export default function Modal({ film, modalModal }) {
 
-    // const [modal, setModal] = useState(false);
-
-    // function toggleModal() {
-    //     setModal(!modal);
-    // }
-    // console.log(movies);
-
-
-
-    // console.log(film);
     return (
         <>
-            {/* {modal && ( */}
             <div className='modal'>
                 <div onClick={modalModal} className='overlay'></div>
                 <div className='modalContent'>
@@ -25,7 +13,6 @@ export default function Modal({ film, modalModal }) {
                     }
                 </div>
             </div>
-            {/* )} */}
         </>
     )
 }

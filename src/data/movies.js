@@ -45,7 +45,7 @@ const movies = [
     },
     {
         id: 5,
-        image: 'https://m.media-amazon.com/images/M/MV5BMDNiNzdiN2EtYzc0NC00OGRiLTkxNzMtNzI5ZjFlZmVlODg3XkEyXkFqcGdeQXVyMTA2MDU0NjM5._V1_FMjpg_UY474_.jpg',
+        image: 'https://m.media-amazon.com/images/M/MV5BNzZmOTU1ZTEtYzVhNi00NzQxLWI5ZjAtNWNhNjEwY2E3YmZjXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_.jpg',
         name: 'Fast X (2023)',
         description: 'Dom Toretto and his family are targeted by the vengeful son of drug kingpin Hernan Reyes.',
         year: 2023,
